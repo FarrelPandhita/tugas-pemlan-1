@@ -86,6 +86,10 @@ public class Atm {
             System.out.println("Password harus memiliki huruf kapital.");
             return false;
         }
+        if (!password.contains("_")) {
+        System.out.println("Password harus mengandung karakter '_'.");
+        return false;
+        }
         return true;
     }
     public static boolean saldoValidator(Long saldo){
@@ -116,6 +120,7 @@ public class Atm {
         System.out.println("Transaksi berhasil! Saldo sekarang: " + saldo);
     }
 }
+
 
 
 
